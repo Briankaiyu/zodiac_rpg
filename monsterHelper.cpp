@@ -8,7 +8,8 @@ int main()
 	int level=1;
 	//the following variables represent the derived states in Zodiac
 	int hp, mp, ap, map, sd, md, acc, macc, evade, resist, crit,speed, maxTech;
-
+	//Rewards granted by monster
+	int xp, money;
 
 	cout<<"Enter monster's STRENGTH: "<<endl;
 	cin>>str;
@@ -36,22 +37,24 @@ int main()
 	crit=98-(agi/15);
 	speed=10+ (agi/15) + (level/10);
 	maxTech=5+(mag/2);
+	xp=level*35;
+	money=level*15;	
 
 	cout<<"DERIVED STATS--------------------------"<<endl;
-	cout<<"HP= "<<hp<<endl;
-	cout<<"MP= "<<mp<<endl;
-	cout<<"ATTACK POWER= "<<ap<<endl;
-	cout<<"MAGIC ATTACK POWER= "<<map<<endl;
-	cout<<"STRENGTH DICE= "<<sd<<endl;
-	cout<<"MAGIC DICE= "<<md<<endl;
-	cout<<"ACCURACY= "<<acc<<endl;
-	cout<<"MAGIC ACCURACY= "<<macc<<endl;
-	cout<<"EVADE= "<<evade<<endl;
-	cout<<"RESIST= "<<resist<<endl;
-	cout<<"CRITICAL= "<<crit<<endl;
-	cout<<"SPEED= "<<speed<<endl;
-	cout<<"MAX TECH LEVEL= "<<maxTech<<endl;
-	
+	cout<<"HP="<<hp<<" / MP="<<mp<<endl;
+	cout<<"ATTACK POWER="<<ap<<endl;
+	cout<<"MAGIC ATTACK POWER="<<map<<endl;
+	cout<<"STRENGTH DICE="<<sd<<endl;
+	cout<<"MAGIC DICE="<<md<<endl;
+	cout<<"ACCURACY="<<acc<<endl;
+	cout<<"MAGIC ACCURACY="<<macc<<endl;
+	cout<<"EVADE="<<evade<<endl;
+	cout<<"RESIST="<<resist<<endl;
+	cout<<"CRITICAL="<<crit<<endl;
+	cout<<"SPEED="<<speed<<endl;
+	cout<<"MAX TECH LEVEL="<<maxTech<<endl;
+	cout<<"REWARDS-------------------------------"<<endl;
+	cout<<"XP="<<xp<<"\tMONEY="<<money<<endl;
 
 
 	return 0;
